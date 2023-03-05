@@ -9,6 +9,8 @@ import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Posts from "./pages/Posts";
+import Profile from "./pages/Profile";
+
 
 
 function App() {
@@ -16,11 +18,13 @@ function App() {
     <>
       <BrowserRouter>
       <header>
+      <h1>Assignment</h1>
         <nav>
-          <h1>Assignment</h1>
+         
           <Link to="/">Home</Link>
           <NavLink to="Dashboard">Dashboard</NavLink>
           <NavLink to="Posts">Posts</NavLink>
+          <NavLink to="Profile">Profile</NavLink>
         </nav>
       </header>
         <main>
@@ -28,16 +32,12 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="Dashboard" element={<Dashboard />} />
               <Route path="Posts" element={<Posts />} />
+              <Route path="Profile" element={<Profile />} />
           </Routes>
         </main>
       </BrowserRouter>
 
-      <div>
-        `Some 
-        Placeholder
-        Text
-        to separate`
-      </div>
+      <h3>Acting as a divider</h3>
 
 
       <ThemeContextProvider>

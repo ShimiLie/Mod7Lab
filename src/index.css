@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Nav bar */
+header nav {
+  display: flex;
+  gap: 16px;
+}
+
+h3 {
+  background-color: black;
+  height: 100px;
+  color: white;
+  font-size: 50px;
+}
